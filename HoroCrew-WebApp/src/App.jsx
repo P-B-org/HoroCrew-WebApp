@@ -13,28 +13,31 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<FormSignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<>
+          <Navbar />
+          <Profile />
+        </>
+        } />
+        <Route path="/socialfeed" element={
+          <ProtectedRoute>
+            <Navbar />
+            <SocialFeed />
+          </ProtectedRoute>
+        } />
+        <Route path="/astrofeed" element={
+          <ProtectedRoute>
+            <Navbar />
+            <AstroFeed />
+          </ProtectedRoute>
+        } />
+        <Route path='*' element={<Navigate to='/' />} />
+      </Routes>
 
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<FormSignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/socialfeed" element={
-            <ProtectedRoute>
-              <SocialFeed />
-            </ProtectedRoute>
-          } />
-          <Route path="/astrofeed" element={
-            <ProtectedRoute>
-              <AstroFeed />
-            </ProtectedRoute>
-          } />
-          <Route path='*' element={<Navigate to='/' />} />
-        </Routes>
 
-      </div>
     </div>
   )
 }
