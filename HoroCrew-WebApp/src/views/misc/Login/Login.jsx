@@ -1,12 +1,14 @@
 import { useFormik } from "formik";
 import { useContext } from "react";
 import { Navigate } from "react-router-dom";
-import FormControl from "../../components/FormControl/FormControl";
-import Input from "../../components/Input/Input";
-import AuthContext from "../../context/AuthContext";
-import { login as loginService } from "../../services/AuthService";
-import { setAccessToken } from "../../stores/AccessTokenStore";
-import { loginSchema } from "../../utils/schemas/login.schema";
+import FormControl from "../../../components/FormControl/FormControl";
+import Input from "../../../components/Input/Input";
+import AuthContext from "../../../context/AuthContext";
+import { login as loginService } from "../../../services/AuthService";
+import { setAccessToken } from "../../../stores/AccessTokenStore";
+import { loginSchema } from "../../../utils/schemas/login.schema";
+import { Link } from "react-router-dom";
+
 
 const initialValues = {
     email: "",
@@ -94,6 +96,8 @@ const Login = () => {
                 >
                     {isSubmitting ? "Submitting..." : "Submit"}
                 </button>
+                <Link className="btn btn-light m-3" to="/"> Atras </Link>
+
             </form>
         </div>
     );

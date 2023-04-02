@@ -1,8 +1,9 @@
 import React from "react";
 import { Formik, Form, ErrorMessage } from "formik";
-import TextField from "../../components/TextField/TextField";
+import TextField from "../../../components/TextField/TextField";
 import * as Yup from "yup";
-import { SignUpSchema } from "../../utils/schemas/signUp.schema";
+import { SignUpSchema } from "../../../utils/schemas/signUp.schema";
+import { Link } from "react-router-dom";
 
 const initialValues = {
     firstName: "",
@@ -121,6 +122,9 @@ export default function signUp() {
                             <button className="btn btn-primary m-3" type="reset">
                                 Reset
                             </button>
+                            <Link className="btn btn-light m-3" to="/"> Atras </Link>
+
+
                         </Form>
                     </div>
                 )
