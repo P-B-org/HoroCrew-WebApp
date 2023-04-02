@@ -1,6 +1,9 @@
-import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Login from "./views/Login/Login";
+import { Route, Routes, Navigate } from "react-router-dom";
+import Navbar from "./components/Misc/Navbar/Navbar";
+import { Login } from "./views/Login/Login";
+import { Home } from "./views/HomePage/Home";
+
+
 
 function App() {
   return (
@@ -9,8 +12,9 @@ function App() {
 
       <div className="container">
         <Routes>
-          <Route path="login" element={<Login />}>
-
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />}>
+            <Route path='*' element={<Navigate to='/' />} />
           </Route>
         </Routes>
 
