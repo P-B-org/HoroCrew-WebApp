@@ -29,14 +29,16 @@ const FormSignUp = () => {
         validateOnBlur: true,
         validateOnChange: false,
         validationSchema: signUpSchema,
-        onSubmit: (values) => signUpService({ firstName: values.firstName, lastName: values.lastName, email: values.email, password: values.password, repeatPassword: values.repeatPassword, dayOfBirth: values.dayOfBirth, monthOfBirth: values.monthOfBirth, yearOfBirth: values.yearOfBirth })
+        onSubmit: (values) => signUpService({ firstName: values.firstName, lastName: values.lastName, email: values.email, password: values.password, repeatPassword: values.repeatPassword, dayOfBirth: values.dayOfBirth, monthOfBirth: values.monthOfBirth, yearOfBirth: values.yearOfBirth, timeOfBirth: values.monthOfBirth })
+
             .then((response) => {
                 console.log(response)
                 navigate("/login")
             })
             .catch((error) => {
+
                 console.log(error);
-                setSubmitting(flase)
+                setSubmitting(false)
             })
 
     });
@@ -189,19 +191,15 @@ const FormSignUp = () => {
                         type="time"
                     />
                 </FormControl>
-                <div>
-                    <button className="btn btn-dark m-3" type="submit">
-                        Register
 
-                    </button>
+                <button className="btn btn-dark m-3" type="submit">
+                    Register
+                </button>
 
-
-                    <button className="btn btn-primary m-3" type="reset">
-                        Reset
-                    </button>
-                    <Link className="btn btn-light m-3" to="/"> Atras </Link>
-
-                </div>
+                <button className="btn btn-primary m-3" type="reset">
+                    Reset
+                </button>
+                <Link className="btn btn-light m-3" to="/"> Atras </Link>
 
 
             </form>

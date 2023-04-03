@@ -11,7 +11,8 @@ export const signUp = ({
     repeatPassword,
     dayOfBirth,
     monthOfBirth,
-    yearOfBirth
+    yearOfBirth,
+    timeOfBirth
 }
 
 ) => http.post("/signup",
@@ -23,7 +24,8 @@ export const signUp = ({
         repeatPassword,
         dayOfBirth,
         monthOfBirth,
-        yearOfBirth
+        yearOfBirth,
+        timeOfBirth
     })
 
 export const login = ({ email, password }) => http.post('/login', { email, password })

@@ -19,7 +19,7 @@ export const signUpSchema = Yup.object({
     yearOfBirth: Yup.number()
         .min(1930, "Minimun year is 1930")
         .required("Year of Birth is required!"),
-    timeOfBirth: Yup.number()
+    timeOfBirth: Yup.string()
         .required("Time of Birth is required!"),
 
 
