@@ -9,6 +9,7 @@ import ProtectedRoute from "./components/Misc/ProtectedRoute/ProtectedRoute"
 import { Profile } from "./views/Profile/Profile";
 
 
+
 function App() {
   return (
     <div className="App">

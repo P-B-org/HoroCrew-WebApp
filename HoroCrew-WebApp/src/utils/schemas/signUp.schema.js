@@ -1,13 +1,13 @@
 import * as Yup from 'yup';
 
-export const SignUpSchema = Yup.object({
+export const signUpSchema = Yup.object({
     firstName: Yup.string().required("Firstname Required!"),
     lastName: Yup.string().required("Firstname Required!"),
     email: Yup.string().email("Email is invalid!").required("Email Required!"),
     password: Yup.string()
         .min(8, "Password must be minimum 8 digits!")
         .required("Password Required!"),
-    confirmPassword: Yup.string()
+    repeatPassword: Yup.string()
         .oneOf([Yup.ref("password"), null], "Password must match!")
         .required("Confirm password is reqired!"),
     dayOfBirth: Yup.number()
@@ -19,5 +19,8 @@ export const SignUpSchema = Yup.object({
     yearOfBirth: Yup.number()
         .min(1930, "Minimun year is 1930")
         .required("Year of Birth is required!"),
+    timeOfBirth: Yup.number()
+        .required("Time of Birth is required!"),
+
 
 });
