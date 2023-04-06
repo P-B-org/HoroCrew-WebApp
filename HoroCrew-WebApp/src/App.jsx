@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import AuthContext from "./context/AuthContext";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Login from "./views/misc/Login/Login";
 import { Home } from "./views/misc/Home/Home";
@@ -11,6 +13,7 @@ import { Profile } from "./views/Profile/Profile";
 
 
 
+
 function App() {
   return (
     <div className="App">
@@ -19,10 +22,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<FormSignUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/profile" element={<>
-          <Navbar />
-          <Profile />
-        </>
+        <Route path="/profile" element={
+          <ProtectedRoute>
+            <Navbar />
+            <Profile />
+          </ProtectedRoute>
         } />
         <Route path="/socialfeed" element={
           <ProtectedRoute>
