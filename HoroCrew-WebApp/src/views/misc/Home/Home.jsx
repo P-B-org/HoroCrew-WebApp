@@ -79,7 +79,7 @@ export const FacialIO = () => {
 
                     onClick={handleLogIn}
                 >
-                    Log-in
+                    Log-in {/* refresh page.. login working*/}
                 </button>
             </div>
         </section>
