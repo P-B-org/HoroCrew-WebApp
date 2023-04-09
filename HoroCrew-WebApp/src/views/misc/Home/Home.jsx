@@ -73,7 +73,7 @@ export const FacialIO = () => {
 
                     onClick={handleSignUp}
                 >
-                    register
+                    register {/* register workin */}
                 </button>
                 <button
 
