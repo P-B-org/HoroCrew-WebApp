@@ -1,5 +1,5 @@
-/*import { Link } from "react-router-dom";
-import "./Home.css";
+import { Link } from "react-router-dom";
+/*import "./Home.css";
 
 
 
@@ -73,13 +73,13 @@ export const FacialIO = () => {
 
                     onClick={handleSignUp}
                 >
-                    register {/* register workin */}
+                    register {/* register working */}
                 </button>
                 <button
 
                     onClick={handleLogIn}
                 >
-                    Log-in {/* refresh page.. login working*/}
+                    <Link to="/profile" >Log-in  </Link> {/* refresh page.. login working*/}
                 </button>
             </div>
         </section>
