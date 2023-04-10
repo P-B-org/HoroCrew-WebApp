@@ -2,7 +2,7 @@ import { useContext } from "react";
 import AuthContext from "./context/AuthContext";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Login from "./views/misc/Login/Login";
-import { FacialIO } from "./views/Facial/Facial";
+import { FacialIO } from "./views/misc/Home/Home";
 //import { Home } from "./views/misc/Home/Home";
 import { Navbar } from "./components/Misc/Navbar/Navbar";
 import FormSignUp from "./views/misc/Signup/Signup";
