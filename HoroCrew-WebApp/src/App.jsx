@@ -2,7 +2,7 @@ import { useContext } from "react";
 import AuthContext from "./context/AuthContext";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Login from "./views/misc/Login/Login";
-import { FacialIO } from "./views/Facial/Facial";
+// { FacialIO } from "./views/Facial/Facial";
 import { Home } from "./views/misc/Home/Home";
 import { Navbar } from "./components/Misc/Navbar/Navbar";
 import FormSignUp from "./views/misc/Signup/Signup";
@@ -21,7 +21,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/loginFacial" element={<FacialIO />} />
+        {/* <Route path="/loginFacial" element={<FacialIO />} />*/}
 
         <Route path="/signup" element={<FormSignUp />} />
         <Route path="/login" element={<Login />} />

@@ -47,11 +47,11 @@ export const Home = () => {
                 </ScrollPage>
                 <ScrollPage>
                     <Animator animation={batch(Fade(), Sticky())}>
-                        <span style={{ fontSize: "40px" }}>
+                        <span style={{ fontSize: "80px" }}>
                             <Link type="button" className="btn join-btn primary" aria-current="page" to="/login"> 🚨 Already have an account?🤘🏽 </Link>
                         </span>
                         <br />
-                        <span style={{ fontSize: "30px" }}>
+                        <span style={{ fontSize: "80px" }}>
                             <Link type="button" className="btn join-btn primary" aria-current="page" to="/signup">Join Us ❤️‍🔥 </Link>
                         </span>
                     </Animator>
