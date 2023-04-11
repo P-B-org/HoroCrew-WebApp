@@ -97,6 +97,7 @@ const Login = () => {
                     {isSubmitting ? "Submitting..." : "Submit"}
                 </button>
                 <Link className="btn btn-light m-3" to="/"> Atras </Link>
+                <Link className="btn btn-light m-3" to="/loginFacial"> Facial Login </Link>
 
             </form>
         </div>
