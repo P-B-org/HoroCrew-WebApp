@@ -135,3 +135,5 @@ export const FacialIO = () => {
         </section>
     );
 }
+
+// verificar que el email se quede en el token y añadir la casilla del Facial ID en el schema del user en el back
