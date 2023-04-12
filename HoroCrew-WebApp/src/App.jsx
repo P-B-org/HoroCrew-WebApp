@@ -10,7 +10,8 @@ import SocialFeed from "./views/Feeds/SocialFeed";
 import AstroFeed from "./views/Feeds/AstrologicalFeed";
 import ProtectedRoute from "./components/Misc/ProtectedRoute/ProtectedRoute"
 import { Profile } from "./views/Profile/Profile";
-import { AppBack } from "./components/Background/Background";
+import { AppBack } from "./components/BackgroundSigns/Background";
+import { FormBg } from "./components/BackgroudForms/BackgroundForm";
 
 
 
@@ -24,8 +25,22 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/loginFacial" element={<FacialIO />} />*/}
 
-        <Route path="/signup" element={<FormSignUp />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={
+
+          <>
+            <FormBg />
+            <FormSignUp />
+          </>
+
+        } />
+        <Route path="/login" element={
+          <>
+            <FormBg />
+            <Login />
+
+          </>
+        }
+        />
         <Route path="/profile" element={
           <ProtectedRoute>
             <Navbar />
