@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import AuthContext from "../../context/AuthContext";
-import { AppBack } from "../../components/Background/Background";
 
 export const Profile = () => {
 

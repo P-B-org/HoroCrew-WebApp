@@ -63,10 +63,33 @@ const logos = [
     { id: 21, logo: <Love /> },
     { id: 22, logo: <Chat /> },
     { id: 23, logo: <MenLove /> },
+    { id: 24, logo: <Sagittarius /> },
+    { id: 25, logo: <Planet /> },
+    { id: 26, logo: <Sun /> },
+    { id: 27, logo: <Sunrise /> },
+    { id: 28, logo: <Moon /> },
+    { id: 29, logo: <Sunset /> },
+    { id: 30, logo: <Earth /> },
+    { id: 31, logo: <GirlLove /> },
+    { id: 32, logo: <Like /> },
+    { id: 33, logo: <Love /> },
+    { id: 34, logo: <Chat /> },
+    { id: 35, logo: <MenLove /> },
+    { id: 36, logo: <Cancer /> },
+    { id: 37, logo: <Aquarius /> },
+    { id: 38, logo: <Aries /> },
+    { id: 39, logo: <Capricorn /> },
+    { id: 40, logo: <Gemini /> },
+    { id: 41, logo: <Leo /> },
+    { id: 42, logo: <Libra /> },
+    { id: 43, logo: <Pisces /> },
+    { id: 44, logo: <Scorpio /> },
+    { id: 45, logo: <Taurus /> },
+    { id: 46, logo: <Virgo /> },
 ];
 
-const repeat = Array.from({ length: 2 });
-const rows = Array.from({ length: 20 });
+const repeat = Array.from({ length: 1 });
+const rows = Array.from({ length: 46 });
 
 export const AppBack = () => {
     return (

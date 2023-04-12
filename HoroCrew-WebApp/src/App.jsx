@@ -29,21 +29,21 @@ function App() {
         <Route path="/profile" element={
           <ProtectedRoute>
             <Navbar />
-
             <Profile />
-            <AppBack />
           </ProtectedRoute>
         } />
         <Route path="/socialfeed" element={
           <ProtectedRoute>
             <Navbar />
             <SocialFeed />
+
           </ProtectedRoute>
         } />
         <Route path="/astrofeed" element={
           <ProtectedRoute>
             <Navbar />
             <AstroFeed />
+            <AppBack />
           </ProtectedRoute>
         } />
         <Route path='*' element={<Navigate to='/' />} />
