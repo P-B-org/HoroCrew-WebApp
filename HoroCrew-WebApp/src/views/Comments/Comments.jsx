@@ -3,6 +3,7 @@ import React from "react";
 import { render } from "react-dom";
 import { useContext } from "react";
 import AuthContext from "../../context/AuthContext";
+import Input from "../../components/Input/Input";
 
 class Comment extends React.Component {
     _getUpperCase(name) {
@@ -47,10 +48,13 @@ class CommentForm extends React.Component {
             <form className="comment-form" onSubmit={this._handleSubmit.bind(this)}>
                 <label>Make a New Post! </label>
                 <div className="comment-form-fields">
-                    <textarea
-                        placeholder="Comment:"
-                        ref={textarea => (this._body = textarea)}
-                    />
+                    <Input>
+                        <textarea
+                            placeholder="Comment:"
+                            ref={textarea => (this._body = textarea)}
+                        />
+                    </Input>
+
                 </div>
                 <div className="comment-form-actions">
                     <button type="submit">Post Comment</button>

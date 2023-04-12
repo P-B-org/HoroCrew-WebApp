@@ -13,6 +13,7 @@ import { Profile } from "./views/Profile/Profile";
 import { AppBack } from "./components/BackgroundSigns/Background";
 import { FormBg } from "./components/BackgroudForms/BackgroundForm";
 import { Post } from "./views/Comments/Comments";
+import { NewPost } from "./views/Post/Post";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <ProtectedRoute>
             <Navbar />
             <Profile />
+            <NewPost />
           </ProtectedRoute>
         } />
         <Route path="/socialfeed" element={
