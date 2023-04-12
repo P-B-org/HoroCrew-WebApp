@@ -12,6 +12,7 @@ import ProtectedRoute from "./components/Misc/ProtectedRoute/ProtectedRoute"
 import { Profile } from "./views/Profile/Profile";
 import { AppBack } from "./components/BackgroundSigns/Background";
 import { FormBg } from "./components/BackgroudForms/BackgroundForm";
+import { Post } from "./views/Comments/Comments";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <ProtectedRoute>
             <Navbar />
             <SocialFeed />
+            <Post />
 
           </ProtectedRoute>
         } />
