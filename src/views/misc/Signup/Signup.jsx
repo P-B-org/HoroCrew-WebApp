@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { signUpSchema } from "../../../utils/schemas/signUp.schema";
 import { Link } from "react-router-dom";
 
+
 const initialValues = {
     firstName: "",
     lastName: "",

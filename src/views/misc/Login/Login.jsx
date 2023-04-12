@@ -8,6 +8,7 @@ import { login as loginService } from "../../../services/AuthService";
 import { setAccessToken } from "../../../stores/AccessTokenStore";
 import { loginSchema } from "../../../utils/schemas/login.schema";
 import { Link } from "react-router-dom";
+import "./Login.css"
 
 
 const initialValues = {
@@ -97,6 +98,7 @@ const Login = () => {
                     {isSubmitting ? "Submitting..." : "Submit"}
                 </button>
                 <Link className="btn btn-light m-3" to="/"> Atras </Link>
+                <Link className="btn btn-light m-3" to="/loginFacial"> Facial Login </Link>
 
             </form>
         </div>
