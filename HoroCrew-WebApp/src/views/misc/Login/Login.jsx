@@ -8,6 +8,7 @@ import { login as loginService } from "../../../services/AuthService";
 import { setAccessToken } from "../../../stores/AccessTokenStore";
 import { loginSchema } from "../../../utils/schemas/login.schema";
 import { Link } from "react-router-dom";
+import "./Login.css"
 
 
 const initialValues = {

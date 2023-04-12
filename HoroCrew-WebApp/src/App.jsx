@@ -13,10 +13,6 @@ import { Profile } from "./views/Profile/Profile";
 import { AppBack } from "./components/BackgroundSigns/Background";
 import { FormBg } from "./components/BackgroudForms/BackgroundForm";
 
-
-
-
-
 function App() {
   return (
     <div className="App">
@@ -35,7 +31,7 @@ function App() {
         } />
         <Route path="/login" element={
           <>
-            <FormBg />
+
             <Login />
 
           </>
