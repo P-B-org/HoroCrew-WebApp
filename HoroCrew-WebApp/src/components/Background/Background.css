@@ -36,8 +36,8 @@ section .row {
 }
 
 .logos:hover {
-    color: #0f0;
-    filter: drop-shadow(0 0 60px #0f0);
+    color: turquoise;
+    filter: drop-shadow(0 0 60px, rgb(134, 215, 207));
     transition: 0s;
 }
 

@@ -29,8 +29,9 @@ function App() {
         <Route path="/profile" element={
           <ProtectedRoute>
             <Navbar />
-            <AppBack />
+
             <Profile />
+            <AppBack />
           </ProtectedRoute>
         } />
         <Route path="/socialfeed" element={
