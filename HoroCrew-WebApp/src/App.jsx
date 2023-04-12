@@ -10,6 +10,7 @@ import SocialFeed from "./views/Feeds/SocialFeed";
 import AstroFeed from "./views/Feeds/AstrologicalFeed";
 import ProtectedRoute from "./components/Misc/ProtectedRoute/ProtectedRoute"
 import { Profile } from "./views/Profile/Profile";
+import { AppBack } from "./components/Background/Background";
 
 
 
@@ -28,7 +29,9 @@ function App() {
         <Route path="/profile" element={
           <ProtectedRoute>
             <Navbar />
+
             <Profile />
+            <AppBack />
           </ProtectedRoute>
         } />
         <Route path="/socialfeed" element={
